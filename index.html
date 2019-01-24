@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav id="top-nav-container">
+      <a href="#">
+        ENTERPRISE HOLDINGS LOGO
+      </a>
+      <div id="dropdown-menu">
+        <span id="account-greeting">HI, FINN</span>
+        <ul>
+          <li>Account</li>
+          <li>Other Thing</li>
+          <li>More Things</li>
+        </ul>
+      </div>
+    </nav>
+    <header id="title-section">
+      <h1>Account Settings</h1>
+      <p>Finn the Human</p>
+      <nav id="page-nav-container">
+        <p>PROFILE</p>
+        <p class="active">SUBSCRIPTIONS</p>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <form id="content-container" class="col-md-8 col-xs-12">
+          <div class="content-section">
+            <h2>Promotions</h2>
+            <div class="slider-section">
+              <div class="slider-subtitle-container">
+                <p class="slider-subtitle">E-Mail Specials</p>
+                <label class="switch">
+                  <input type="checkbox" name="email-specials" value="true">
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="slider-options-container">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <input type="checkbox" class="slider-option" name="email-specials" value="enterprise" id="enterprise-email-specials" checked>
+                  <label class="btn btn-slider-option" for="enterprise-email-specials">Enterprise</label>
+                  <input type="checkbox" class="slider-option" name="email-specials" value="national" id="national-email-specials" checked>
+                  <label class="btn btn-slider-option" for="national-email-specials">National</label>
+                  <input type="checkbox" class="slider-option" name="email-specials" value="alamo" id="alamo-email-specials" checked>
+                  <label class="btn btn-slider-option" for="alamo-email-specials">Alamo</label>
+                </div>
+              </div>
+            </div>
+            <div class="slider-section">
+              <div class="slider-subtitle-container">
+                <p class="slider-subtitle">Biannual eNewsletter</p>
+                <label class="switch">
+                  <input type="checkbox" name="biannual-enewsletter" value="true">
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="slider-options-container">
+                  <input type="checkbox" class="slider-option" name="biannual-enewsletter" value="enterprise" id="enterprise-biannual-enewsletter" checked>
+                  <label class="btn btn-slider-option" for="enterprise-biannual-enewsletter">Enterprise</label>
+                  <input type="checkbox" class="slider-option" name="biannual-enewsletter" value="national" id="national-biannual-enewsletter" checked>
+                  <label class="btn btn-slider-option" for="national-biannual-enewsletter">National</label>
+                  <input type="checkbox" class="slider-option" name="biannual-enewsletter" value="alamo" id="alamo-biannual-enewsletter" checked>
+                  <label class="btn btn-slider-option" for="alamo-biannual-enewsletter">Alamo</label>
+              </div>
+            </div>
+            <div class="slider-section">
+              <div class="slider-subtitle-container">
+                <p class="slider-subtitle">Promotions</p>
+                <label class="switch">
+                  <input type="checkbox" name="promotions" value="true">
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="slider-options-container">
+                <input type="checkbox" class="slider-option" name="promotions" value="enterprise" id="enterprise-promotions" checked>
+                <label class="btn btn-slider-option" for="enterprise-promotions">Enterprise</label>
+                <input type="checkbox" class="slider-option" name="promotions" value="national" id="national-promotions" checked>
+                <label class="btn btn-slider-option" for="national-promotions">National</label>
+                <input type="checkbox" class="slider-option" name="promotions" value="alamo" id="alamo-promotions" checked>
+                <label class="btn btn-slider-option" for="alamo-promotions">Alamo</label>
+              </div>
+              <div class="slider-extra-options-container">
+                <p class="slider-extra-options-container-subtitle">Send through:</p>
+                <div class="slider-options-container">
+                    <input type="checkbox" class="slider-option" name="promotions" value="ehi-app" id="ehi-app-promotions" checked>
+                    <label class="btn btn-slider-option" for="ehi-app-promotions">EHI App</label>
+                    <input type="checkbox" class="slider-option" name="promotions" value="text" id="text-promotions" checked>
+                    <label class="btn btn-slider-option" for="text-promotions">Text</label>
+                    <input type="checkbox" class="slider-option" name="promotions" value="email" id="email-promotions" checked>
+                    <label class="btn btn-slider-option" for="email-promotions">E-mail</label>
+                    <input type="checkbox" class="slider-option" name="promotions" value="email" id="phone-promotions">
+                    <label class="btn btn-slider-option" for="phone-promotions">Phone</label>
+                    <input type="checkbox" class="slider-option" name="promotions" value="email" id="facebook-messenger-promotions">
+                    <label class="btn btn-slider-option" for="facebook-messenger-promotions">Facebook Messenger</label>
+                    <span class="more-methods">More methods...</span>
+                  </div>
+              </div>
+            </div>
+            <div class="slider-section">
+              <div class="slider-subtitle-container">
+                <p class="slider-subtitle">Program Announcements</p>
+                <label class="switch">
+                  <input type="checkbox" name="program-announcements" value="true">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="content-section">
+            <h2>Membership</h2>
+            <div class="slider-section">
+              <div class="slider-subtitle-container">
+                <p class="slider-subtitle">Membership Alerts</p>
+                <label class="switch">
+                  <input type="checkbox" name="membership-alerts" value="true">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div class="slider-section">
+              <div class="slider-subtitle-container">
+                <p class="slider-subtitle">Monthly eStatements</p>
+                <label class="switch">
+                  <input type="checkbox" name="monthly-estatements" value="true">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="content-section">
+            <h2>Rent</h2>
+            <div class="slider-section">
+              <div class="slider-subtitle-container">
+                <p class="slider-subtitle">Arrival Alerts</p>
+                <label class="switch">
+                  <input type="checkbox" name="arrival-alerts" value="true">
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="slider-options-container">
+                <input type="checkbox" class="slider-option" name="arrival-alerts" value="enterprise" id="enterprise-arrival-alerts" checked>
+                <label class="btn btn-slider-option" for="enterprise-arrival-alerts">Enterprise</label>
+                <input type="checkbox" class="slider-option" name="arrival-alerts" value="national" id="national-arrival-alerts">
+                <label class="btn btn-slider-option" for="national-arrival-alerts">National</label>
+                <input type="checkbox" class="slider-option" name="arrival-alerts" value="alamo" id="alamo-arrival-alerts" checked>
+                <label class="btn btn-slider-option" for="alamo-arrival-alerts">Alamo</label>
+              </div>
+              <div class="slider-extra-options-container">
+                <p class="slider-extra-options-container-subtitle">Send through:</p>
+                <div class="slider-options-container">
+                    <input type="checkbox" class="slider-option" name="arrival-alerts" value="ehi-app" id="ehi-app-arrival-alerts" checked>
+                    <label class="btn btn-slider-option" for="ehi-app-arrival-alerts">EHI App</label>
+                    <input type="checkbox" class="slider-option" name="arrival-alerts" value="text" id="text-arrival-alerts" checked>
+                    <label class="btn btn-slider-option" for="text-arrival-alerts">Text</label>
+                    <span class="more-methods">More methods...</span>
+                  </div>
+              </div>
+            </div>
+            <div class="slider-section">
+              <div class="slider-subtitle-container">
+                <p class="slider-subtitle">Monthly eStatements</p>
+                <label class="switch">
+                  <input type="checkbox" name="monthly-estatements" value="true">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="full-screen-banner">
+      <div class="full-screen-content-container">
+        <button id="btn-inverse" class="btn-primary">CANCEL</button>
+        <button class="btn-primary">SAVE</button>
+      </div>
+    </div>
+    <div class="full-screen-banner active-banner" id="preferences-banner">
+      <div class="full-screen-content-container">
+        <p class="preferences-saved-copy">Your preferences were successfully updated.</p>
+      </div>
+    </div>
+  </body>
+</html>
